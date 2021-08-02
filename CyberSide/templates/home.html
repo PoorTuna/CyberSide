@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{%block title%}CyberSide Home{%endblock%}
+
+{%block content%}
+	<!-- SOCKETIO CLIENT LIBRARY -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+	{% if not session['user'] %}
+		<!-- PUT LOGIN SECTION HERE -->
+		<link rel="stylesheet"  type = "text/css" href="{{url_for('static',filename = 'css/background.css')}}">
+		<div class="bg"></div>
+
+		<!-- Ambient Sounds -->
+		<audio autoplay loop autoplay="autoplay" id="cyberside_ambience">
+			<source src="{{url_for('static',filename = 'assets/audio/cyberside_ambience.mp3')}}" type="audio/mpeg">
+		</audio>
+		<script src="{{url_for('static',filename = 'js/playaudio.js')}}"></script>
+
+	{% else %}
+	<script src="{{url_for('static',filename = 'js/index-sockets.js')}}"></script>
+
+	<!-- Voice Chat Functionality -->
+	<!-- <script type="text/javascript" charset="utf-8" src="{{url_for('static',filename = 'js/voicechat.js')}}"></script> -->
+
+	<!-- CSS styling -->
+	<link rel="stylesheet"  type = "text/css" href="{{url_for('static',filename = 'css/index.css')}}">
+
+
+	{% endif %}
+
+{%endblock%}

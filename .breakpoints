@@ -1,0 +1,42 @@
+{
+  "files": {
+    "CyberSide/models.py": [
+      {
+        "id": "1a139dad-5b16-46cf-b003-02dcc6af6abc",
+        "line": 7,
+        "version": 24,
+        "index": 273
+      },
+      {
+        "id": "4a12e464-ba96-4031-baa6-c433ae65f5ae",
+        "line": 30,
+        "version": 24,
+        "index": 1939
+      }
+    ],
+    "CyberSide/routes.py": [
+      {
+        "id": "23f42d30-6d5c-437b-adec-4b6ce76e08c5",
+        "line": 51,
+        "version": 254,
+        "index": 1358
+      }
+    ],
+    "CyberSide/socketz.py": [
+      {
+        "id": "a07ae889-6eff-4772-96f8-653b92866631",
+        "line": 256,
+        "version": 18,
+        "index": 9775
+      }
+    ],
+    "CyberSide/templates/base.html": [
+      {
+        "id": "6f7edfb6-4bd7-485a-911c-b28172b9c011",
+        "line": 14,
+        "version": 54,
+        "index": 462
+      }
+    ]
+  }
+}

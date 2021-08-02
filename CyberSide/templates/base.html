@@ -1,0 +1,28 @@
+<html>
+	<!-- Note this is the base template for most pages -->
+	<head>
+		<title>{%block title%}{%endblock%}</title>
+		<meta charset="utf-8">
+		<!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+		<script>
+			if (!window.jQuery) {
+					document.write('<script src="https://code.jquery.com/jquery-1.12.4.js"><\/script>');
+			}
+		</script>
+		
+		<!-- <link rel="icon" href="{{url_for('static',filename = 'assets/images/logo/logoinverted.png')}}" alt = "xd"> -->
+
+		<!-- <link rel="stylesheet"  type = "text/css" href="{{url_for('static',filename = 'css/bootstrap.css')}}">
+		<link rel="stylesheet"  type = "text/css" href="{{url_for('static',filename = 'css/fonts.css')}}"> -->
+		<!-- Font Awesome Icons -->
+		<!-- <script src="https://kit.fontawesome.com/114aaee4b8.js" crossorigin="anonymous"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+		
+		<script src ="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+	{%block content%}{%endblock%}
+	</body>
+</html>
